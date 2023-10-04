@@ -10,11 +10,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap Library CSS CDN go here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Boostrap Library JS CDN  go here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <!-- Other libraries go here -->
 
     <!-- Link to styles of your own -->
+    <Style>
+      .card-img-top {
+    width: 100%;
+    height: 10vh;
+    object-fit: contain;    
+    /* object-fit: cover;  might work too  */
+}
+    </Style>
+   
     <!-- <link rel="stylesheet" href="./styles/style.css"> -->
 
 </head>
@@ -25,7 +38,90 @@
     <!-- Your HTML Layout go here -->
     <!------------------------------>
     <!-- Stuff for body goes here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/logo.jpg" height="36">Price Palate</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Shopping List</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h1 class="visually-hidden">Heroes examples</h1>
+      
+        <div class="p-5 mb-4 text-center bg-light rounded-3">
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold">Welcome to Price Palate!</h1>
+              <p class="text-center fs-4">Let's save your time and money for grocery shopping </p>
+      
+              <button class="btn btn-success btn-lg" type="button">Login/Signup</button>
+          <hr>
+              <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                  <img src=".\images\img1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                </div>
+              
+              <!-- Add an onclick attribute to define click event handler -->
+              <!-- <button onclick="window.location.href='login.html'" class="btn btn-primary btn-lg" type="button">Login/Signup</button> -->
+              </div>
+            </div>
 
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src=".\images\Costco_logo.jpg" class="card-img-top" alt="Costco">
+                  <div class="card-body">
+                    <h5 class="card-title">Costco</h5>
+                    <p class="card-text">The Costco story begins in 1976, when entrepreneur Sol Price introduced a groundbreaking retail concept in San Diego, California. Price Club was the world’s first membership warehouse club, a place where efficient buying and operating practices gave members access to unmatched savings.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src=".\images\sof_logo.jpg" class="card-img-top" alt="Save on Food">
+                  <div class="card-body">
+                    <h5 class="card-title">Save On Food</h5>
+                    <p class="card-text">Save-On-Foods is a chain of supermarkets located across Western Canada, owned by the Pattison Food Group. Stores carry both standard brands and private label brands, such as Western Family and Only Goodness.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src=".\images\T&T_logo.jpg" class="card-img-top" alt="T&T">
+                  <div class="card-body">
+                    <h5 class="card-title">T&T</h5>
+                    <p class="card-text">T&T Supermarket is a Canadian supermarket chain that sells primarily Asian foods. The company is headquartered in Richmond, British Columbia. In 1993, the first T&T was opened in Burnaby's Metropolis at Metrotown, a shopping centre in the Metrotown area in the Greater Vancouver region.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+      </main>
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
